@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 20px;
+    }
+
+    .p {
+      color: rgb(217, 48, 37);
+      font-size: 20px;
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+
+    .nothing {
+      border-bottom: 0.5px solid rgb(208, 206, 206);
+      
+    }
+    .image {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: rgb(11, 11, 11);
+            font-size: 15px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+
+    .the_afters {
+      display: flex;
+      
+      
+    }
+    .after{
+      margin-left: 20px;
+    }
+    .aafter{
+      margin-left: 700px;
+
+    }
+
+    .new {
+      margin: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group p {
+      width: 200px;
+     margin:0;
+     
+     
+      font-size: 13px;
+    }
+
+    .search {
+      width: 600px;
+      height: 25px;
+      border: 1px solid rgb(199, 199, 199);
+      margin-right: 20px;
+      font-size: 16px;
+    }
+
+    .search:focus {
+      outline: none;
+      border: 1px solid rgb(85, 93, 255);
+    }
+    .submit{
+      background-color: rgb(65, 138, 255);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 130px;
+      height: 25px;
+      border: 0.5px solid rgb(12, 87, 208);
+      margin-top: 30px;
+      margin-left: 680px;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor:pointer;
+      
+
+    }
+    .submit:hover{
+      background-color:rgb(34, 108, 227) ;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <img src="logo.png" alt="Logo" width="67" height="30">
+    <a class="image" href="index.html">Google Search</a>
+  </div>
+
+  <div class="word">
+    <p class="p">
+      advanced Search
+    </p>
+    <p class="nothing"></p>
+  </div>
+
+  <div class="the_afters">
+    <p class="after">Find pages with…</p>
+    <p class="aafter" style="color: gray;">
+      <strong>To do this in the search box</strong>
+    </p>
+  </div>
+
+  <div class="new">
+    <form action="https://google.com/search">
+      <div class="form-group">
+        <p>all of the following words:</p>
+        <input class="search" type="text" name="as_q">
+        <p style="margin-left: 30px;">Enter the important words: tricolor terrier</p>
+      </div>
+
+      <div class="form-group">
+        <p>this exact word or expression:</p>
+        <input class="search" type="text" name="as_epq">
+        <p style="margin-left: 30px;">Add quotation marks around the exact words: "terrier"</p>
+      </div>
+
+      <div class="form-group">
+        <p>one of the following words:</p>
+        <input class="search"  type="text" name="as_oq">
+        <p style="margin-left: 30px;">Enter OR between all the words to include: miniature OR standard</p>
+      </div>
+
+      <div class="form-group">
+        <p>none of the following words:</p>
+        <input class="search"  type="text" name="as_eq">
+        <p style="margin-left: 30px;">Place a - (minus) sign in front of the words to exclude: -rodent, -"Jack Russell"</p>
+      </div>
+
+      <input class="submit" type="submit" value="advanced Search">
+    </form>
+  </div>
+</body>
+
+</html>

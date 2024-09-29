@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Search
+
+  </title>
+  <style>
+    .head {
+      top: 0;
+      left: 0;
+      position: absolute;
+
+      margin-left: 20px;
+    }
+
+    .head-right {
+      top: 0;
+      right: 0;
+      position: absolute;
+      margin-top: 20px;
+      list-style-type: r;
+      margin-right: 20px;
+
+    }
+
+
+
+    .gmail,
+    .image,
+    .advanced {
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      color: rgb(11, 11, 11);
+      font-size: 15px;
+      cursor: pointer;
+      margin-right: 8px;
+
+
+    }
+
+    .menu {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      margin-right: 15px;
+      margin-top: 15px;
+
+    }
+
+    .menu:hover {
+      transition: 0.4s;
+      background-color: rgb(212, 209, 209);
+      border-radius: 15px;
+      text-align: center;
+      margin-bottom: 15px;
+
+    }
+
+    .menuu {
+      width: 20px;
+      height: 20px;
+      margin-top: 5px;
+
+    }
+
+    .connect {
+      border: none;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      text-align: center;
+      background-color: rgb(26, 115, 232);
+      width: 135px;
+      height: 35px;
+      border-radius: 3px;
+      cursor: pointer;
+
+    }
+
+    .connect:hover {
+      background-color: rgb(21, 87, 172);
+
+    }
+
+    .middle {
+      text-align: center;
+    }
+
+    .logo {
+      margin-top: 100px;
+      width: 300px;
+
+    }
+
+    .search {
+      width: 590px;
+      height: 40px;
+      display: block;
+      margin-top: 75px;
+      margin-left: 300px;
+      border: 0.5px rgb(171, 168, 168) solid;
+      border-radius: 20px;
+      padding-left: 40px;
+      padding-right: 20px;
+      font-size: 20px;
+
+
+
+
+    }
+
+
+    .submit {
+      margin-top: 5px;
+    }
+
+    .search:focus {
+      outline: none;
+      border: 1px solid rgb(126, 124, 124);
+    }
+
+    .icon {
+      position: absolute;
+      left: 310px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    
+    }
+
+    .searching {
+      margin-top: 30px;
+      margin-right: 320px;
+      position: relative;
+      display: inline-block;
+      transform: translateY(-50%);
+    }
+    .icon1{
+      position: absolute;
+      right:10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      
+    }
+    .submit, .o-submit{
+     
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-color: rgb(234, 234, 234);
+      border: none;
+      width:150px;
+      height: 40px;
+      border-radius: 2px;
+      cursor: pointer;
+     
+      
+    }
+    .o-submit{
+      margin-top: 5px;
+     
+    }
+    .after-search{
+      display: flex;
+     justify-content: center;
+      gap: 10px;
+      margin-top: 30px;
+      margin-left: 280px;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="head">
+    <a class="gmail" href="https://mail.google.com/mail/&ogbl">Gmail</a>
+    
+    <div class="menu">
+
+      <a href="https://www.google.co.ma/intl/fr/about/products"><img class="menuu" src="menu.png"> </a>
+
+    </div>
+    <a class="button"
+      href="https://accounts.google.com/ServiceLogin?hl=fr&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
+      <button class="connect">Connection</button></a>
+  </div>
+
+  <div class="head-right">
+    <a class="image" href="image.html">Image Search</a>
+    <a class="advanced" href="advanced.html">Advanced Search</a>
+  </div>
+
+
+
+  <div class="middle">
+    <img class="logo" src="logo.png">
+    <div class="searching">
+      <form action="https://www.google.com/search" method="GET">
+        <div class="contain">
+          <input class="search" type="text" name="q">
+          <img class="icon" src="search (2).png" width="20" height="20">
+          <img class="icon1" src="mic (1).png" width="20" height="25">
+        </div>
+        <div class="after-search">
+          <input class="submit" type="submit" value="Google Search">
+          <button class="o-submit"><a style=" color: black; text-decoration: none;" href="https://doodles.google/">I'm Lucky</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
